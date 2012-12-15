@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+a:hover {
+	color: red;
+}
+
+
+a, a:hover {
+	text-decoration: none;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+/* Main Page Layout */
+
+* {
+	border: 1px solid red;
+}
+
+body {
+	text-align: center;
+	background-color: #EEE;
+	position: relative;
+}
+
+#container {
+	width: auto;
+	border: 1px solid #EEE;
+	position: relative;
+}
+
+#content {
+	width: 75%;
+	height: 90%;
+	margin: 4% auto;
+	background-color: white;
+	border: 4px solid #fff; 
+	position: relative; 
+}
+
+#header {
+	line-height: 40px;
+	padding: 10px;	
+	text-align: left;
+	border-bottom: 1px solid #EEE;
+	display: inline-block;
+	width: 98%;
+}
+
+#header h1 {
+	display: inline-block;
+	width: 50%;
+}
+
+
+#footer {
+	position: absolute;
+	bottom: 10px;
+	left: 33%;
+	right: 33%;
+}
+
+
+#footer ul li {
+	display: inline-block;
+	text-align: left;
+	margin: 0px 10px 0px 10px;
+	padding: 0px 10px;
+	border-left: 1px solid #AAA;
+	border-right: 1px solid #AAA;
+}
+
+#footer ul a:hover {
+	color: red;
+}
+
+/* -------------------- Nav bar ------------------------- */
+
+nav {
+	position: relative;
+	z-index: 10;
+	width: 100% auto;
+}
+
+.sub-menu {
+	position: relative;
+	z-index: 20;
+	color: white;
+}
+
+.category a, .category a:visited {
+	color: white;
+}
+
+.category a:hover {
+	color: red;
+}
+
+.category {
+	float: left;	
+	background-color: #444;
+	padding: 10px;
+	width: 18%;
+}
+
+/* Search Bar  */
+
+.search {
+	font-size: 1.5em;
+	margin-bottom: 20px;
+	float: right;
+}
+
+.search label {
+	margin-right: 20px;
+}
+
+.search input {
+	height: 30px;
+	font-size: 0.8em;
+}
