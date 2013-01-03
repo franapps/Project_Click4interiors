@@ -134,6 +134,7 @@ html[xmlns] .clearfix {
 
 #container {
 	width: 100%;
+<<<<<<< HEAD
 	min-height: 100%;
 	position: relative;
 <<<<<<< HEAD
@@ -141,13 +142,23 @@ html[xmlns] .clearfix {
     padding-top: 3%;
 =======
 >>>>>>> Updated page layout, adjusted flexslider
+=======
+    min-height: 100%;
+	position: relative;
+>>>>>>> Replaced flexslider with elastislide, updated css, added sample images
 }
 
 #header {
-	width: 99% auto;
+	width: 100% auto;
 	height: 20%;
 	position: relative;
 	padding: 1%;
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+}
+
+#header a {
+    text-decoration: none;
 }
 
 #header h1 {
@@ -162,20 +173,32 @@ html[xmlns] .clearfix {
 	font-size: 1.5em;
 }
 
+<<<<<<< HEAD
 #header .search {
 	position: absolute;
 		top: 75%;
 		right: 1%;
+=======
+#search {
+>>>>>>> Replaced flexslider with elastislide, updated css, added sample images
 	font-size: 1.3em;
+    position: absolute;
+        bottom: 5px;
+        right: 5px;
 }
 
 #logo {
-	float: right;
+    max-height: 100%;
+    position: absolute;
+        top: 0;
+        right: 0;
+    opacity: 0.3;
 }
 
 /*________Navigation________*/
 
 nav {
+<<<<<<< HEAD
     width: 100%;
     z-index: 10;
     position: absolute;
@@ -191,12 +214,70 @@ nav {
     margin: auto;
     float: left;
     display: inline-block;
+=======
+    float: left;
 }
 
 .category {
+    border-bottom: 1px dotted grey;
+    width: 100px;
+    margin: 20px;
     text-align: center;
+    padding-bottom: 10px;
+>>>>>>> Replaced flexslider with elastislide, updated css, added sample images
 }
 
+.sub-menu {
+    padding-top: 5px;
+    text-align: right;
+}
+
+.sub-menu li {
+    padding: 3px 0px;
+}
+
+.category a, .category a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.category a:hover {
+    color: red;
+}
+
+/*________Content________*/
+
+#content {
+    height: 80%;
+    min-height: 350px;
+    display: inline-block;
+    width: 75%;
+    margin: auto;
+    padding: 0 2% 2% 2%;
+}
+
+#viewport {
+    display: block;
+    width: 500px;
+    margin: auto;
+    border: 3px solid #BBB;
+}
+
+#desc h3, #desc h4, #desc p, #desc a {
+    padding: 5px 3px;
+}
+
+
+/*________sidebar________*/
+
+#sidebar {
+    text-align: center;
+    float: right;
+    margin-right: 1%;
+    border: 1px solid grey;
+}
+
+<<<<<<< HEAD
 .category {
     text-decoration: none;
 }
@@ -239,10 +320,22 @@ nav {
 
 #footer ul li {
     float: left;
+=======
+#sidebar ul li:first-child {
+    border-bottom: 1px solid grey;
+}
+
+#sidebar ul {
+    list-style: none;
+}
+
+#sidebar ul li {
+>>>>>>> Replaced flexslider with elastislide, updated css, added sample images
     padding: 5px;
     margin: 20px;
 }
 
+<<<<<<< HEAD
 #copyright {
     width: 500px;
     margin: 20px auto;
@@ -254,4 +347,19 @@ nav {
     width: 100px;
     height: 100px;
     background-color: blue;
+=======
+#sidebar ul a {
+    text-decoration: none;
+}
+
+#copyright {
+    margin: 20px auto;
+}
+
+/*________Footer________*/
+
+#footer {
+    width: 500px;
+    margin: auto;
+>>>>>>> Replaced flexslider with elastislide, updated css, added sample images
 }

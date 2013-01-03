@@ -9,10 +9,18 @@ $desc = array("Fabulous", "Gorgeous", "Fantastic", "Beautiful", "Trendy", "Conte
 		<?php
 			echo $this->fetch('meta');
 			echo $this->html->css('style');
+<<<<<<< HEAD
 			echo $this->html->css('flexslider');
 			echo $this->html->script('jquery-182');
 			echo $this->html->script('jquery.flexslider');
 			echo $this->html->script('scripts');
+=======
+			echo $this->html->css('elastislide');
+			echo $this->html->css('custom');
+			echo $this->html->script('jquery-182');
+			echo $this->html->script('scripts');
+			echo $this->html->script('modernizr.custom.17475');
+>>>>>>> Replaced flexslider with elastislide, updated css, added sample images
 		?>
 		<link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 		<script type="text/javascript">
@@ -22,6 +30,7 @@ $desc = array("Fabulous", "Gorgeous", "Fantastic", "Beautiful", "Trendy", "Conte
 		</script>
 	</head>
 	<body>
+<<<<<<< HEAD
 		<div id="container">
 			<!-- this is my headline -->
 			<div id="header">
@@ -30,6 +39,17 @@ $desc = array("Fabulous", "Gorgeous", "Fantastic", "Beautiful", "Trendy", "Conte
 				<h2><?php echo ">>".$title_for_layout; ?></h2>
 				<h3>The Home of <?php echo $desc[rand(0, 6)]; ?> Furniture</h3>	
 				<div class="search">
+=======
+		<div id="container" class="demo-3">
+			<!-- this is my headline -->
+			<div id="header">
+				<img id="logo" src="/app/webroot/img/newlogo.jpg">
+				<div id="headline">
+					<h1><a href="/">Welcome to Click4Interiors</a></h1>
+					<h3>The Home of <?php echo $desc[rand(0, 6)]; ?> Furniture</h3>	
+				</div>
+				<div id="search">
+>>>>>>> Replaced flexslider with elastislide, updated css, added sample images
 					<form method="POST" action="products/search">
 						<label>I am Looking for...</label><input type="text" placeholder="tub chairs..."><input type="submit" value="Find it!">
 					</form>
@@ -37,7 +57,11 @@ $desc = array("Fabulous", "Gorgeous", "Fantastic", "Beautiful", "Trendy", "Conte
 			</div>
 			
 			<!-- This is my navigation -->
+<<<<<<< HEAD
 			<nav>
+=======
+			<nav >
+>>>>>>> Replaced flexslider with elastislide, updated css, added sample images
 				<!-- Drop down Nav Bar -->
 				<div class="category">
 					<h2><a href="/products" class="">Living </a></h2>
@@ -92,6 +116,7 @@ $desc = array("Fabulous", "Gorgeous", "Fantastic", "Beautiful", "Trendy", "Conte
 				});
 			</script>
 
+<<<<<<< HEAD
 			<div id="content">
 				
 				<!-- Content goes here -->
@@ -108,6 +133,70 @@ $desc = array("Fabulous", "Gorgeous", "Fantastic", "Beautiful", "Trendy", "Conte
 				</ul>
 				<p id="copyright" class="clearfix"> www.click4interiors.co.uk | Copyright &#169 <?php echo date('Y'); ?> | All rights reserved</p>
 			</div>
+=======
+
+
+			<div id="content">
+				<div id="viewer">
+					<!-- Content goes here -->
+					<?php echo $this->fetch('content'); ?>
+				</div>
+			</div>
+
+			<!-- This is the Footer -->
+			<div id="sidebar">
+				<ul>
+					<a href="#"><li>About us</li></a>
+					<a href="#"><li>Latest Offers</li></a>
+					<a href="#"><li>Newest Products</li></a>
+					<a href="/posts/index"><li>Blog</li></a>
+					<a href="#"><li>Terms & Conditions</li></a>
+				</ul>
+			</div>
+
+			<!-- This is the Footer -->
+			<div id="footer">
+				<p id="copyright"> www.click4interiors.co.uk | Copyright &#169 <?php echo date('Y'); ?> | All rights reserved</p>
+			</div>
+
+			<div class="fixed-bar gallery">
+				<!-- Elastislide Carousel -->
+				<ul id="carousel" class="elastislide-list">
+					<li><a href="#"><img src="img/1.jpg" alt="image01" /></a></li>
+					<li><a href="#"><img src="img/2.jpg" alt="image02" /></a></li>
+					<li><a href="#"><img src="img/namgecko.jpg" alt="image03" /></a></li>
+					<li><a href="#"><img src="img/4.jpg" alt="image04" /></a></li>
+					<li><a href="#"><img src="img/5.jpg" alt="image05" /></a></li>
+					<li><a href="#"><img src="img/6.jpg" alt="image06" /></a></li>
+					<li><a href="#"><img src="img/7.jpg" alt="image07" /></a></li>
+					<li><a href="#"><img src="img/1.jpg" alt="image08" /></a></li>
+					<li><a href="#"><img src="img/4.jpg" alt="image09" /></a></li>
+					<li><a href="#"><img src="img/7.jpg" alt="image10" /></a></li>
+					<li><a href="#"><img src="img/5.jpg" alt="image11" /></a></li>
+					<li><a href="#"><img src="img/2.jpg" alt="image12" /></a></li>
+					<li><a href="#"><img src="img/1.jpg" alt="image13" /></a></li>
+					<li><a href="#"><img src="img/6.jpg" alt="image14" /></a></li>
+					<li><a href="#"><img src="img/2.jpg" alt="image15" /></a></li>
+					<li><a href="#"><img src="img/6.jpg" alt="image16" /></a></li>
+					<li><a href="#"><img src="img/1.jpg" alt="image17" /></a></li>
+					<li><a href="#"><img src="img/4.jpg" alt="image18" /></a></li>
+					<li><a href="#"><img src="img/7.jpg" alt="image19" /></a></li>
+					<li><a href="#"><img src="img/namgecko.jpg" alt="image20" /></a></li>
+				</ul>
+
+				<!-- End Elastislide Carousel -->
+			</div>
+
+			<script type="text/javascript" src="/app/webroot/js/jquerypp.custom.js"></script>
+			<script type="text/javascript" src="/app/webroot/js/jquery.elastislide.js"></script>
+			<script type="text/javascript">
+				
+				$( '#carousel' ).elastislide( {
+					minItems : 4
+				} );
+				
+			</script>
+>>>>>>> Replaced flexslider with elastislide, updated css, added sample images
 
 		</div>
 	</body>
