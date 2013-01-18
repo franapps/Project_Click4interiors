@@ -1,5 +1,3 @@
-<!-- File: app/view/products/index.php -->
-
 <h1>Products Home</h1>
 <p>This page will display a list of categories containing our products.</p>
 
@@ -22,5 +20,5 @@
 		<td><img src=<?php echo $product['Product']['Image']; ?> style="max-width: 200px; max-height: 200px;" /></td>
 	</tr>
 	<?php endforeach; ?>
-	<?php unset($product); ?>
+	
 </table>

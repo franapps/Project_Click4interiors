@@ -135,6 +135,7 @@ html[xmlns] .clearfix {
 #container {
 	width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	min-height: 100%;
 	position: relative;
 <<<<<<< HEAD
@@ -146,6 +147,10 @@ html[xmlns] .clearfix {
     min-height: 100%;
 	position: relative;
 >>>>>>> Replaced flexslider with elastislide, updated css, added sample images
+=======
+    min-height: 100%;
+	position: relative;
+>>>>>>> Updates to php
 }
 
 #header {
@@ -174,6 +179,7 @@ html[xmlns] .clearfix {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #header .search {
 	position: absolute;
 		top: 75%;
@@ -181,6 +187,9 @@ html[xmlns] .clearfix {
 =======
 #search {
 >>>>>>> Replaced flexslider with elastislide, updated css, added sample images
+=======
+#search {
+>>>>>>> Updates to php
 	font-size: 1.3em;
     position: absolute;
         bottom: 5px;
@@ -198,6 +207,7 @@ html[xmlns] .clearfix {
 /*________Navigation________*/
 
 nav {
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 100%;
     z-index: 10;
@@ -227,6 +237,19 @@ nav {
 >>>>>>> Replaced flexslider with elastislide, updated css, added sample images
 }
 
+=======
+    float: left;
+}
+
+.category {
+    border-bottom: 1px dotted grey;
+    width: 100px;
+    margin: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+>>>>>>> Updates to php
 .sub-menu {
     padding-top: 5px;
     text-align: right;
@@ -275,6 +298,7 @@ nav {
     float: right;
     margin-right: 1%;
     border: 1px solid grey;
+<<<<<<< HEAD
 }
 
 <<<<<<< HEAD
@@ -321,6 +345,10 @@ nav {
 #footer ul li {
     float: left;
 =======
+=======
+}
+
+>>>>>>> Updates to php
 #sidebar ul li:first-child {
     border-bottom: 1px solid grey;
 }
@@ -330,11 +358,15 @@ nav {
 }
 
 #sidebar ul li {
+<<<<<<< HEAD
 >>>>>>> Replaced flexslider with elastislide, updated css, added sample images
+=======
+>>>>>>> Updates to php
     padding: 5px;
     margin: 20px;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #copyright {
     width: 500px;
@@ -348,6 +380,8 @@ nav {
     height: 100px;
     background-color: blue;
 =======
+=======
+>>>>>>> Updates to php
 #sidebar ul a {
     text-decoration: none;
 }
@@ -361,5 +395,8 @@ nav {
 #footer {
     width: 500px;
     margin: auto;
+<<<<<<< HEAD
 >>>>>>> Replaced flexslider with elastislide, updated css, added sample images
+=======
+>>>>>>> Updates to php
 }

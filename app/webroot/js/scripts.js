@@ -2,6 +2,7 @@ $(document).ready(function() {
     /*$('.flexslider').flexslider({
         animation: "slide",
 <<<<<<< HEAD
+<<<<<<< HEAD
         animationLoop: false,
         move: 1,
         itemWidth: 600,
@@ -14,6 +15,13 @@ $(document).ready(function() {
         slideshow: true,
         slideshowSpeed: 7500,
 >>>>>>> Replaced flexslider with elastislide, updated css, added sample images
+=======
+        animationLoop: true,
+        move: 1,
+        itemWidth: 600,
+        slideshow: true,
+        slideshowSpeed: 7500,
+>>>>>>> Updates to php
         controlNav: "thumbnails",
         start: function(slider){
             $(".flex-caption").each(function(){

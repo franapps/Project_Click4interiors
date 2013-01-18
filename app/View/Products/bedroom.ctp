@@ -1,5 +1,3 @@
-<!-- File: app/view/products/index.php -->
-
 <h1>Products Home</h1>
 <p>This page will display a list of categories containing our products.</p>
 

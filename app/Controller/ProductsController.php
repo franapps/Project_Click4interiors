@@ -1,11 +1,10 @@
 <?php
 class ProductsController extends AppController {
 	public $helpers = array('Html', 'form', 'Js');
-	public $components = array('Session');
+	public $components = array('session');
 
 	public function index() {
 		//List all products in Database
-		$title = "Product Listing";
 		$products = $this->Product->find('all');
 		$this->set('products', $products);
 	}
@@ -27,7 +26,7 @@ class ProductsController extends AppController {
         	        "Product Description LIKE" => "%$searchstr%",
         	        "Product ID LIKE" => "%searchstr%",
         	        "Category LIKE" => "%searchstr%",
-        	        "Sub-Category" => "%searchstr%",
+        	        "Sub-Category LIKE" => "%searchstr%",
         	        "Tags LIKE" => "%$searchstr%"
         	    	)
         	    )
@@ -38,7 +37,7 @@ class ProductsController extends AppController {
 
 	public function add() {
 		if ($this->request->is('post')) {
-			$this->Product->create();
+   			$this->Product->create();
 			if ($this->Product->save($this->request->data)) {
 				$this->Session->setFlash('The product has been saved.');
 				$this->redirect(array('action' => 'index'));
@@ -48,5 +47,17 @@ class ProductsController extends AppController {
 		}
 	}
 
+    public function cat($cat = null) {
+        $conditions = array(
+            'conditions' => array(
+            'or' => array(
+                "Category LIKE" => $cat,
+                "Sub-Category LIKE" => $cat
+                )
+            )
+        );
+        $this->set('products', $this->Product->find('all', $conditions));
+    }
 }
+	
 ?>

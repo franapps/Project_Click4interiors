@@ -4,6 +4,7 @@ $pageTitle = "Welcome to Click4interiors.co.uk";
 $furniture = "Furniture";
 ?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 				<div class="flexslider">
 					<ul class="slides">
 						<li data-thumb="img/namgecko.jpg">
@@ -41,3 +42,8 @@ $furniture = "Furniture";
 				<a href="#" class="button">Buy Now</a>
 				</div>
 >>>>>>> Replaced flexslider with elastislide, updated css, added sample images
+=======
+				<img id="viewport" src="../img/namgecko.jpg">
+
+				<p>This is the home page, above is the viewport for topics and news which will be shwn on the slider below. Clicking on an object in the slider will bring it to the main viewport.</p>
+>>>>>>> Updates to php
