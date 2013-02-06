@@ -106,7 +106,7 @@ input, select {
 /* ---------------------------------------------------------- */
 
 body {
-	font-family: 'Titillium Web', helvetica, sans-serif;
+	font-family: 'Maven Pro', helvetica, sans-serif;
 }
 
 .clearfix:after {
@@ -134,23 +134,8 @@ html[xmlns] .clearfix {
 
 #container {
 	width: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-	min-height: 100%;
-	position: relative;
-<<<<<<< HEAD
-	border: 1px solid red;
-    padding-top: 3%;
-=======
->>>>>>> Updated page layout, adjusted flexslider
-=======
     min-height: 100%;
 	position: relative;
->>>>>>> Replaced flexslider with elastislide, updated css, added sample images
-=======
-    min-height: 100%;
-	position: relative;
->>>>>>> Updates to php
 }
 
 #header {
@@ -178,18 +163,7 @@ html[xmlns] .clearfix {
 	font-size: 1.5em;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-#header .search {
-	position: absolute;
-		top: 75%;
-		right: 1%;
-=======
 #search {
->>>>>>> Replaced flexslider with elastislide, updated css, added sample images
-=======
-#search {
->>>>>>> Updates to php
 	font-size: 1.3em;
     position: absolute;
         bottom: 5px;
@@ -207,37 +181,6 @@ html[xmlns] .clearfix {
 /*________Navigation________*/
 
 nav {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 100%;
-    z-index: 10;
-    position: absolute;
-        top: 15%;
-    overflow: hidden;
-    margin: 0px;
-}
-
-.category {
-	background-color: #555;
-	width: 20%;
-    padding: 10px 0px;
-    margin: auto;
-    float: left;
-    display: inline-block;
-=======
-    float: left;
-}
-
-.category {
-    border-bottom: 1px dotted grey;
-    width: 100px;
-    margin: 20px;
-    text-align: center;
-    padding-bottom: 10px;
->>>>>>> Replaced flexslider with elastislide, updated css, added sample images
-}
-
-=======
     float: left;
 }
 
@@ -249,7 +192,6 @@ nav {
     padding-bottom: 10px;
 }
 
->>>>>>> Updates to php
 .sub-menu {
     padding-top: 5px;
     text-align: right;
@@ -279,11 +221,39 @@ nav {
     padding: 0 2% 2% 2%;
 }
 
-#viewport {
+#frontPanel {
     display: block;
-    width: 500px;
+    width: 80%;
     margin: auto;
+}
+
+.panel {
+    display: inline-block;
+    height: 300px;
+    width: 49.5%;
     border: 3px solid #BBB;
+    margin-bottom: 3px;
+}
+
+.panel h1 {
+    width: auto;
+    margin: auto;
+}
+
+#panel1 {
+    background-color: red;
+}
+
+#panel2 {
+    background-color: blue;
+}
+
+#panel3 {
+    background-color: yellow;
+}
+
+#panel4 {
+    background-color: green;
 }
 
 #desc h3, #desc h4, #desc p, #desc a {
@@ -298,57 +268,8 @@ nav {
     float: right;
     margin-right: 1%;
     border: 1px solid grey;
-<<<<<<< HEAD
 }
 
-<<<<<<< HEAD
-.category {
-    text-decoration: none;
-}
-
-.category h2 {
-	width: 100%;
-	margin: auto;
-}
-
-.category a, .category a:visited {
-    color: white;
-}
-
-.category a:hover {
-    color: red;
-}
-
-/*________Content________*/
-
-#content {
-    padding-top: 3%;
-    height: 80%;
-}
-
-
-/*________Footer________*/
-
-#footer {
-    width: 100%;
-    height: 15%;
-    text-align: center;
-    background-color: #555;
-}
-
-#footer ul {
-    list-style: none;
-    width: 400px;
-    margin: auto;
-}
-
-#footer ul li {
-    float: left;
-=======
-=======
-}
-
->>>>>>> Updates to php
 #sidebar ul li:first-child {
     border-bottom: 1px solid grey;
 }
@@ -358,30 +279,10 @@ nav {
 }
 
 #sidebar ul li {
-<<<<<<< HEAD
->>>>>>> Replaced flexslider with elastislide, updated css, added sample images
-=======
->>>>>>> Updates to php
     padding: 5px;
     margin: 20px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-#copyright {
-    width: 500px;
-    margin: 20px auto;
-}
-
-/*________Grid________*/
-
-#grid table td {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-=======
-=======
->>>>>>> Updates to php
 #sidebar ul a {
     text-decoration: none;
 }
@@ -393,10 +294,6 @@ nav {
 /*________Footer________*/
 
 #footer {
-    width: 500px;
+    width: 600px;
     margin: auto;
-<<<<<<< HEAD
->>>>>>> Replaced flexslider with elastislide, updated css, added sample images
-=======
->>>>>>> Updates to php
 }

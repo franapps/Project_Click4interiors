@@ -9,26 +9,15 @@ $desc = array("Fabulous", "Gorgeous", "Fantastic", "Beautiful", "Trendy", "Conte
 		<?php
 			echo $this->fetch('meta');
 			echo $this->html->css('style');
-<<<<<<< HEAD
-<<<<<<< HEAD
-			echo $this->html->css('flexslider');
-			echo $this->html->script('jquery-182');
-			echo $this->html->script('jquery.flexslider');
-			echo $this->html->script('scripts');
-=======
-=======
->>>>>>> Updates to php
 			echo $this->html->css('elastislide');
 			echo $this->html->css('custom');
 			echo $this->html->script('jquery-182');
 			echo $this->html->script('scripts');
 			echo $this->html->script('modernizr.custom.17475');
-<<<<<<< HEAD
->>>>>>> Replaced flexslider with elastislide, updated css, added sample images
-=======
->>>>>>> Updates to php
 		?>
-		<link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+		<!-- Google Web Fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet" type="text/css">
+
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('.sub-menu').css("display", "none");
@@ -36,19 +25,6 @@ $desc = array("Fabulous", "Gorgeous", "Fantastic", "Beautiful", "Trendy", "Conte
 		</script>
 	</head>
 	<body>
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<div id="container">
-			<!-- this is my headline -->
-			<div id="header">
-				<img id="logo" src="/app/webroot/img/newlogo.jpg" id="logo" style="max-height:90px;">
-				<h1><a href="/">Welcome to Click4Interiors</a></h1>
-				<h2><?php echo ">>".$title_for_layout; ?></h2>
-				<h3>The Home of <?php echo $desc[rand(0, 6)]; ?> Furniture</h3>	
-				<div class="search">
-=======
-=======
->>>>>>> Updates to php
 		<div id="container" class="demo-3">
 			<!-- this is my headline -->
 			<div id="header">
@@ -58,66 +34,14 @@ $desc = array("Fabulous", "Gorgeous", "Fantastic", "Beautiful", "Trendy", "Conte
 					<h3>The Home of <?php echo $desc[rand(0, 6)]; ?> Furniture</h3>	
 				</div>
 				<div id="search">
-<<<<<<< HEAD
->>>>>>> Replaced flexslider with elastislide, updated css, added sample images
-					<form method="POST" action="products/search">
-=======
-					<form method="POST" action="/products/search">
->>>>>>> Updates to php
-						<label>I am Looking for...</label><input type="text" placeholder="tub chairs..."><input type="submit" value="Find it!">
+					<form method="POST" id="ProductsSearchForm" action="/products/search" accept-charset="utf-8">
+						<label for="ProductsSearch">I am looking for...</label>
+						<input name="data[Products][search]" type="text" placeholder="tub chairs" id="ProductsSearch"><input type="submit" value="Find it!">
 					</form>
 				</div>
 			</div>
 			
 			<!-- This is my navigation -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<nav>
-=======
-			<nav >
->>>>>>> Replaced flexslider with elastislide, updated css, added sample images
-				<!-- Drop down Nav Bar -->
-				<div class="category">
-					<h2><a href="/products" class="">Living </a></h2>
-					<ul class="sub-menu">
-						<li><a href="#">Chairs</a></li>
-						<li><a href="#">Tables</a></li>
-						<li><a href="#">Sofas</a></li>
-					</ul>
-				</div>
-				<div class="category">
-					<h2><a href="dining.php" class="">Dining </a></h2>
-					<ul class="sub-menu">
-						<li><a href="#">Dining Sets</a></li>
-						<li><a href="#">Chairs</a></li>
-						<li><a href="#">Tables</a></li>
-						<li><a href="#">Sideboards</a></li>
-					</ul>
-				</div>
-				<div class="category">
-					<h2><a href="#" class="">Bedroom </a></h2>
-					<ul class="sub-menu">
-						<li><a href="#">Beds</a></li>
-						<li><a href="#">Cabinets</a></li>
-						<li><a href="#">Wardrobes</a></li>
-						<li><a href="#">Dressers</a></li>
-					</ul>
-				</div>
-				<div class="category">
-					<h2><a href="#" class="">Bespoke </a></h2>
-					<ul class="sub-menu">
-						<li><a href="#">Tub Chairs</a></li>
-					</ul>
-				</div>
-				<div class="category">
-					<h2><a href="#" class="">Accessories </a></h2>
-					<ul class="sub-menu">
-						<li><a href="#">Mirrors</a></li>
-						<li><a href="#">Lighting</a></li>
-						<li><a href="#">Ornaments</a></li>
-						<li><a href="#">Cushions</a></li>
-						<li><a href="#">Rugs</a></li>
-=======
 			<nav >
 				<!-- Drop down Nav Bar -->
 				<div class="category">
@@ -160,7 +84,6 @@ $desc = array("Fabulous", "Gorgeous", "Fantastic", "Beautiful", "Trendy", "Conte
 						<li><a href="/products/cat/ornaments">Ornaments</a></li>
 						<li><a href="/products/cat/cushions">Cushions</a></li>
 						<li><a href="/products/cat/rugs">Rugs</a></li>
->>>>>>> Updates to php
 					</ul>
 				</div>
 			</nav>
@@ -174,22 +97,6 @@ $desc = array("Fabulous", "Gorgeous", "Fantastic", "Beautiful", "Trendy", "Conte
 				});
 			</script>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<div id="content">
-				
-				<!-- Content goes here -->
-				<?php echo $this->fetch('content'); ?>
-
-			</div>
-
-			<!-- This is the Footer -->
-			<div id="footer" class="clearfix">
-				<ul class="clearfix">
-					<a href="#"><li>About us</li></a>
-					<a href="#"><li>Terms & Conditions</li></a>
-					<a href="/posts/index"><li>Blog</li></a>
-=======
 
 			<div id="content">
 				<div id="viewer">
@@ -200,29 +107,6 @@ $desc = array("Fabulous", "Gorgeous", "Fantastic", "Beautiful", "Trendy", "Conte
 
 
 			<!-- This is the Footer -->
-			<div id="sidebar">
-				<ul>
-					<a href="#"><li>About us</li></a>
-					<a href="#"><li>Latest Offers</li></a>
-					<a href="#"><li>Newest Products</li></a>
-					<a href="/posts/index"><li>Blog</li></a>
-					<a href="#"><li>Terms & Conditions</li></a>
->>>>>>> Updates to php
-				</ul>
-				<p id="copyright" class="clearfix"> www.click4interiors.co.uk | Copyright &#169 <?php echo date('Y'); ?> | All rights reserved</p>
-			</div>
-=======
-
-
-			<div id="content">
-				<div id="viewer">
-					<!-- Content goes here -->
-					<?php echo $this->fetch('content'); ?>
-				</div>
-			</div>
-
-			<!-- This is the Footer -->
-<<<<<<< HEAD
 			<div id="sidebar">
 				<ul>
 					<a href="#"><li>About us</li></a>
@@ -241,38 +125,19 @@ $desc = array("Fabulous", "Gorgeous", "Fantastic", "Beautiful", "Trendy", "Conte
 			<div class="fixed-bar gallery">
 				<!-- Elastislide Carousel -->
 				<ul id="carousel" class="elastislide-list">
-					<li><a href="#"><img src="img/1.jpg" alt="image01" /></a></li>
-					<li><a href="#"><img src="img/2.jpg" alt="image02" /></a></li>
-					<li><a href="#"><img src="img/namgecko.jpg" alt="image03" /></a></li>
-					<li><a href="#"><img src="img/4.jpg" alt="image04" /></a></li>
-					<li><a href="#"><img src="img/5.jpg" alt="image05" /></a></li>
-					<li><a href="#"><img src="img/6.jpg" alt="image06" /></a></li>
-					<li><a href="#"><img src="img/7.jpg" alt="image07" /></a></li>
-					<li><a href="#"><img src="img/1.jpg" alt="image08" /></a></li>
-					<li><a href="#"><img src="img/4.jpg" alt="image09" /></a></li>
-					<li><a href="#"><img src="img/7.jpg" alt="image10" /></a></li>
-					<li><a href="#"><img src="img/5.jpg" alt="image11" /></a></li>
-					<li><a href="#"><img src="img/2.jpg" alt="image12" /></a></li>
-					<li><a href="#"><img src="img/1.jpg" alt="image13" /></a></li>
-					<li><a href="#"><img src="img/6.jpg" alt="image14" /></a></li>
-					<li><a href="#"><img src="img/2.jpg" alt="image15" /></a></li>
-					<li><a href="#"><img src="img/6.jpg" alt="image16" /></a></li>
-					<li><a href="#"><img src="img/1.jpg" alt="image17" /></a></li>
-					<li><a href="#"><img src="img/4.jpg" alt="image18" /></a></li>
-					<li><a href="#"><img src="img/7.jpg" alt="image19" /></a></li>
-					<li><a href="#"><img src="img/namgecko.jpg" alt="image20" /></a></li>
-=======
-			<div id="footer">
-				<p id="copyright"> www.click4interiors.co.uk | Copyright &#169 <?php echo date('Y'); ?> | All rights reserved</p>
-			</div>
+				<!-- 
+					<?php if($title_for_layout=="Products") {
+						foreach ($products as $product): ?>
+							<li><a href="#"><img src=<?php echo $product['Product']['Image']; ?> alt="image01"/></a></li>
+					<?php endforeach; 
+					}else{
+						echo "<li><a href='/posts/latest'><img src='/app/webroot/img/namgecko.jpg' alt='image05' /></a></li>";
+						echo "<li><a href=#><img src='/app/webroot/img/namgecko.jpg' alt='image06' /></a></li>";
+						echo "<li><a href=#><img src='/app/webroot/img/namgecko.jpg' alt='image07' /></a></li>";
+						echo "<li><a href=#><img src='/app/webroot/img/namgecko.jpg' alt='image08' /></a></li>";
 
-			<div class="fixed-bar gallery">
-				<!-- Elastislide Carousel -->
-				<ul id="carousel" class="elastislide-list">
-					<?php foreach ($products as $product): ?>
-					<li><a href="#"><img src=<?php echo $product['Product']['Image']; ?> alt="image01" /></a></li>
-					<?php endforeach; ?>
->>>>>>> Updates to php
+					}; ?> 
+				-->
 				</ul>
 
 				<!-- End Elastislide Carousel -->
@@ -287,10 +152,6 @@ $desc = array("Fabulous", "Gorgeous", "Fantastic", "Beautiful", "Trendy", "Conte
 				} );
 				
 			</script>
-<<<<<<< HEAD
->>>>>>> Replaced flexslider with elastislide, updated css, added sample images
-=======
->>>>>>> Updates to php
 
 		</div>
 	</body>

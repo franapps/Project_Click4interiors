@@ -22,3 +22,8 @@
 	<?php endforeach; ?>
 	
 </table>
+
+<?php if(count($products) == 0) {
+	echo "<br><h1><span style='color: red;'>Sorry,</span> there are no products to display in this category.</h1>";
+}
+?>

@@ -3,8 +3,12 @@ class PostsController extends AppController {
 	public $helpers = array('Html', 'form', 'Js');
 	public $components = array('session');
 
+	function beforeFilter() {
+		parent::beforeFilter();
+	}
+
 	public function index() {
-		$this->set('posts', $this->Post->find('all'));
+		$this->set('posts', $this->Post->find('all', array('limit'=>10, 'order' => array('ID' => 'desc'))));
 	}
 
 	public function view($id = null) {
@@ -46,5 +50,9 @@ class PostsController extends AppController {
 			$this->Session->setFlash('The post with id: ' . $id . ' has been deleted.');
 			$this->redirect(array('action' => 'index'));
 		}
+	}
+
+	public function latest() {
+		$this->set('posts', $this->Post->find('all', array('limit'=>1, 'order' => array('Post.created' => 'desc'))));
 	}
 }

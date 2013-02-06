@@ -1,0 +1,1 @@
+Welcome to the dashboard index. If all works, when you log in you will see this page. This page will contain all the forms necessary to update the products in the database and the blog posts.

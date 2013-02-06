@@ -3,6 +3,11 @@ class ProductsController extends AppController {
 	public $helpers = array('Html', 'form', 'Js');
 	public $components = array('session');
 
+    function beforeFilter() {
+        parent::beforeFilter();
+        $this->Auth->allow('cat');
+    }
+
 	public function index() {
 		//List all products in Database
 		$products = $this->Product->find('all');
